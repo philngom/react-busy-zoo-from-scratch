@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import AnimalFight from './AnimalFight/AnimalFight';
 
 function App() {
+  const [unicornSize, setUnicornSize] = useState(10);
+  const [lionSize, setLionSize] = useState(10);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AnimalFight unicornSize={unicornSize} setUnicornSize={setUnicornSize} lionSize={lionSize} setLionSize={setLionSize}/>
+      <div>second row</div>
+      <div>third row</div>
     </div>
   );
 }
