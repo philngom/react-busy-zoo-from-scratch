@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import AnimalFight from './AnimalFight/AnimalFight';
+import Shop from './Shop/Shop';
 
 test('renders learn react link', () => {
-  render(<AnimalFight />);
-  const linkElement = screen.getByText(/munching/i);
-  expect(linkElement).toBeInTheDocument();
+  render(<Shop />);
+  const linkElement = screen.getAllByRole('button');
+
+  expect(linkElement[0]).toBeInTheDocument();
 });
