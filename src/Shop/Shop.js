@@ -4,7 +4,7 @@ import './Shop.css';
 export default function Shop({ isOpen, setIsOpen }) {
   return (
     <div className='shop'>
-      <div className='door'>
+      <div className={`door ${isOpen ? 'open' : 'closed'}`}>
         The shop is {isOpen ? 'open!' : 'closed!'}
       </div>
       <div>
