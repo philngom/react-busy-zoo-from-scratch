@@ -1,0 +1,4 @@
+.shop {
+  display: grid;
+  grid-template-rows: 80% 1fr;
+}
