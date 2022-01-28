@@ -1,4 +1,10 @@
 .animals {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-animal-buttons {
+  display: flex;
 }

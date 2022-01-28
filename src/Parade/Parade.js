@@ -6,7 +6,7 @@ export default function Parade({ animals }) {
     <div className="parade">
       {
         animals.map((animal, i) =>
-          <p key={animal + i}>{
+          <p key={animal + i} className='animal'>{
             animal === 'lion' ? '🦁' :
               animal === 'lizard' ? '🦎' :
                 animal === 'giraffe' ? '🦒' :
