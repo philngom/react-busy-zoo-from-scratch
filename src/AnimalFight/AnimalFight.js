@@ -3,8 +3,6 @@ import './AnimalFight.css';
 
 export default function AnimalFight({ setLionSize, setUnicornSize, lionSize, unicornSize }) {
 
-
-
   return (
     <div className="fight">
       <div className="lion">
@@ -20,9 +18,7 @@ export default function AnimalFight({ setLionSize, setUnicornSize, lionSize, uni
           <button className='center' onClick={() => setUnicornSize(unicornSize + 1)}>The unicorn is growing!</button>
           <button onClick={() => setLionSize(lionSize - 1)}>The unicorn is munching down on the lion!</button>
         </div>
-
       </div>
-
     </div>
   );
 }
